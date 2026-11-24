@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Night variant: identical to the light theme so the app always stays light. -->
+    <style name="Base.Theme.IndividualAssignment_TengkuMuhammadZulhakim" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_amber</item>
+        <item name="colorSecondaryVariant">@color/accent_amber</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/accent_amber</item>
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:statusBarColor">@color/primary_blue_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <!-- Stop Android 15+ from drawing content behind the ActionBar -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
+    </style>
+
+    <style name="Theme.IndividualAssignment_TengkuMuhammadZulhakim" parent="Base.Theme.IndividualAssignment_TengkuMuhammadZulhakim" />
+</resources>

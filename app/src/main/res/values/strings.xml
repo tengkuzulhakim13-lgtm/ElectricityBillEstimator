@@ -1,0 +1,44 @@
+<resources>
+    <!-- Shown in the title bar and under the launcher icon -->
+    <string name="app_name">Electricity Bill Estimator</string>
+
+    <!-- TODO: replace with your real GitHub repository URL after pushing the project -->
+    <string name="github_url">https://github.com/yourusername/your-repo-name</string>
+
+    <!-- Main page -->
+    <string name="main_heading">Estimate Your Monthly Bill</string>
+    <string name="main_instructions" formatted="false">How to use:\n1. Select the month.\n2. Enter units used (1 – 1000 kWh).\n3. Slide to choose the rebate (0% – 5%).\n4. Tap Calculate &amp; Save. The result appears below and is saved automatically.</string>
+    <string name="label_month">Month</string>
+    <string name="hint_units">Units used (kWh)</string>
+    <string name="helper_units">Whole or decimal number between 1 and 1000</string>
+    <string name="label_rebate">Rebate: %1$d%%</string>
+    <string name="btn_calculate">Calculate &amp; Save</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_view_list">View Saved Bills</string>
+    <string name="btn_about">About &amp; Help</string>
+    <string name="result_title">Calculation Result</string>
+    <string name="rate_notice">Tariff: 1–200 kWh @ 21.8 sen · 201–300 kWh @ 33.4 sen · 301–600 kWh @ 51.6 sen · 601–1000 kWh @ 54.6 sen</string>
+
+    <!-- Errors -->
+    <string name="err_units_empty">Please enter the number of kWh used</string>
+    <string name="err_units_invalid">Please enter a valid number</string>
+    <string name="err_units_range">Units must be between 1 and 1000 kWh</string>
+
+    <!-- List page -->
+    <string name="list_heading">Saved Bills (Month — Final Cost)</string>
+    <string name="list_hint">Tap a bill to view details, edit or delete it.</string>
+    <string name="list_empty">No bills saved yet.\nGo back and tap \"Calculate &amp; Save\" to add one.</string>
+
+    <!-- About page details -->
+    <string name="about_fullname">Tengku Muhammad Zulhakim Bin Tengku Dzulkarnain</string>
+    <string name="about_student_id">Student ID: 2024243758</string>
+    <string name="about_course">ICT602 — Mobile Technology and Development</string>
+    <string name="about_copyright">© 2026 Tengku Muhammad Zulhakim. All rights reserved.</string>
+    <string name="about_description_title">About this app</string>
+    <string name="about_description" formatted="false">Electricity Bill Estimator calculates your monthly electricity bill using the block tariff rates, applies a rebate of 0% – 5%, and saves every result in an offline (SQLite) database so you can review, edit or delete it later.</string>
+    <string name="about_website_title">Application website (GitHub):</string>
+
+    <!-- About page instructions -->
+    <string name="about_howto_title">How to use this app</string>
+    <string name="about_howto_body" formatted="false">1. On the main screen, choose the month (January – December) from the drop-down list.\n2. Enter the electricity units used in kWh (minimum 1, maximum 1000). An error is shown if the value is empty or out of range.\n3. Drag the slider to set the rebate percentage (0% – 5%).\n4. Tap \"Calculate &amp; Save\". The Total Charges and Final Cost after rebate appear on the same screen and the record is saved to the local database.\n5. Tap \"Clear\" to reset the form.\n6. Tap \"View Saved Bills\" to see the list of saved bills (month and final cost).\n7. Tap any bill in the list to open its details (month, units, total charges, rebate and final cost).\n8. On the details page, tap \"Edit\" to change the month, units or rebate, then \"Save Changes\". Tap \"Delete\" to remove the bill.\n\nTariff blocks:\n• First 200 kWh (1–200): 21.8 sen/kWh\n• Next 100 kWh (201–300): 33.4 sen/kWh\n• Next 300 kWh (301–600): 51.6 sen/kWh\n• Next 400 kWh (601–1000): 54.6 sen/kWh\n\nFinal cost = Total charges − (Total charges × rebate %)</string>
+</resources>

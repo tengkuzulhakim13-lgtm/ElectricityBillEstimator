@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Student picture -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:contentDescription="Student photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/about_fullname"
+            android:textColor="@color/primary_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_student_id"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/about_course"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="20dp" android:background="@color/divider_grey" />
+
+        <!-- App description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_description_title"
+            android:textColor="@color/primary_blue"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/about_description"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="20dp" android:background="@color/divider_grey" />
+
+        <!-- Clickable website URL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_website_title"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGithubLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/github_url"
+            android:textColor="#1E88E5"
+            android:textSize="14sp" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="20dp" android:background="@color/divider_grey" />
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_howto_title"
+            android:textColor="@color/primary_blue"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:lineSpacingExtra="6dp"
+            android:padding="14dp"
+            android:text="@string/about_howto_body"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <!-- Copyright -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/about_copyright"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>

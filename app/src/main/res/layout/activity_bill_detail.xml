@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- View mode (title "Bill Details" is shown in the ActionBar) -->
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/tvMonth" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="16sp" android:textColor="@color/text_primary" android:background="@color/white" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/tvUnits" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="16sp" android:textColor="@color/text_primary" android:background="@color/white" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/tvTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="16sp" android:textColor="@color/text_primary" android:background="@color/white" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/tvRebate" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="16sp" android:textColor="@color/text_primary" android:background="@color/white" android:layout_marginBottom="8dp" />
+            <TextView android:id="@+id/tvFinal" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/primary_blue" android:background="@color/white" android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Edit mode -->
+        <LinearLayout
+            android:id="@+id/editGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/notice_bg"
+                android:padding="10dp"
+                android:text="Edit the values below, then tap Save Changes. Totals are recalculated automatically."
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/label_month"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerMonthEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUnitsEdit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/hint_units"
+                app:errorEnabled="true"
+                app:helperText="@string/helper_units"
+                app:helperTextEnabled="true"
+                app:suffixText="kWh">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUnitsEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvRebateEditLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Rebate: 0%"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sbRebateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:max="5" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnEditSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Edit" android:backgroundTint="@color/primary_blue" android:textColor="@color/white" />
+        <Button android:id="@+id/btnDelete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Delete" android:backgroundTint="@color/danger_red" android:textColor="@color/white" />
+        <Button android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Back" android:backgroundTint="@color/text_secondary" android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
