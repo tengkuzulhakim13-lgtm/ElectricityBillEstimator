@@ -2,8 +2,7 @@
     <!-- Shown in the title bar and under the launcher icon -->
     <string name="app_name">Electricity Bill Estimator</string>
 
-    <!-- TODO: replace with your real GitHub repository URL after pushing the project -->
-    <string name="github_url">https://github.com/yourusername/your-repo-name</string>
+    <string name="github_url">https://github.com/tengkuzulhakim13-lgtm/ElectricityBillEstimator</string>
 
     <!-- Main page -->
     <string name="main_heading">Estimate Your Monthly Bill</string>
